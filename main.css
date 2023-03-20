@@ -32,4 +32,11 @@ a {
     color: rgb(1, 252, 1);
 }
 
+a:hover {
+    color: red;
+    text-decoration: underline;
+    background-color: white;
+    font-weight: bold;
+}
+
 li {padding: 5px;}
