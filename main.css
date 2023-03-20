@@ -10,6 +10,23 @@ header {
     color: lightgreen;
     padding: 10px;
     font-size: 16pt;
+    transition: 2s;
+}
+
+header:hover {
+    background-color: black;
+    color: lightgreen;
+    padding: 10px;
+    font-size: 18pt;
+    transition: 300ms;
+}
+
+header:active {
+    background-color: black;
+    color: rgb(14, 167, 14);
+    padding: 10px;
+    font-size: 18pt;
+    transition: 300ms;
 }
 
 main {
@@ -25,6 +42,27 @@ footer {
     font-size: 16pt;
     font-style: italic;
     text-align: right;
+    transition: 2s;
+}
+
+footer:hover {
+    background-color: black;
+    color: lightgreen;
+    padding: 10px;
+    font-size: 18pt;
+    font-style: italic;
+    text-align: right;
+    transition: 600ms;
+}
+
+footer:active {
+    background-color: black;
+    color: rgb(14, 167, 14);
+    padding: 10px;
+    font-size: 18pt;
+    font-style: italic;
+    text-align: right;
+    transition: 600ms;
 }
 
 a {
