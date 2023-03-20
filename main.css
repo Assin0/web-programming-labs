@@ -32,11 +32,20 @@ a {
     color: rgb(1, 252, 1);
 }
 
+a:visited {
+    color: rgb(218, 233, 9);
+}
+
 a:hover {
-    color: red;
+    color: rgb(0, 255, 149);
     text-decoration: underline;
     background-color: white;
     font-weight: bold;
+    border-radius: 3px;
+}
+
+a:active {
+    color: rgb(17, 0, 255);
 }
 
 li {padding: 5px;}
