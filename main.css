@@ -30,6 +30,8 @@ footer {
 a {
     text-decoration: none;
     color: rgb(1, 252, 1);
+    text-shadow: 5px 5px 3px rgb(0, 14, 2);
+    transition: 2s;
 }
 
 a:visited {
@@ -42,10 +44,14 @@ a:hover {
     background-color: white;
     font-weight: bold;
     border-radius: 3px;
+    text-shadow: none;
+    transition: 300ms;
 }
 
 a:active {
     color: rgb(17, 0, 255);
 }
 
-li {padding: 5px;}
+li {
+    padding: 5px;
+}
