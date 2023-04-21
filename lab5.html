@@ -54,6 +54,20 @@
             output.style.color = textColor;
             output.style.borderRadius = borderRadus;
         }
+        function showSm() {
+            let inputS = document.getElementById("numberS")
+            let inputD = document.getElementById("numberD")
+            let inputF = document.getElementById("numberF")
+            let inputG = document.getElementById("numberG")
+
+            let a =  parseInt(inputS.value);
+            let b =  parseInt(inputD.value);
+            let c =  parseInt(inputF.value);
+            let d =  parseInt(inputG.value);
+            let result = a*100 + b*80 + c*150 + d*300;
+            let cena = document.getElementById("cena");
+            cena.innerHTML = "Сумма равна " + result + " рублей";
+        }
     </script>
     <style>
 
@@ -78,6 +92,18 @@
             padding-top: 5px;
         }
 
+        #cena {
+            border: 1px solid;
+            width: 300px;
+            height: 40px;
+            text-align: center;
+            padding-top: 5px;
+        }
+
+        .karzina {
+            border: 1px solid;
+            width: 300px;
+        }
     </style>
 </head>
 
@@ -103,6 +129,24 @@
         </div>
 
         <div id="output"></div>
+
+        <br>
+
+        <div class="karzina">
+            <h1>Корзина товаров</h1>
+            <div class="podpis">Яблоки (100р/шт):</div>
+            <input type="number" value="3" id="numberS">
+            <div class="podpis">Груши (80р/шт):</div>
+            <input type="number" value="8" id="numberD">
+            <div class="podpis">Апельсины (150р/шт):</div>
+            <input type="number" value="4" id="numberF">
+            <div class="podpis">Дыни (300р/шт):</div>
+            <input type="number" value="1" id="numberG">
+            <input type="button" value="Рассчитать" onclick="showSm()">
+
+            <div id="cena"></div>
+        </div>
+
     </main>
 
     <footer onclick="showAuthor()">
