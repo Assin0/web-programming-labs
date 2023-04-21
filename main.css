@@ -30,7 +30,7 @@ header:active {
 }
 
 main {
-    margin-left: 10px;
+    margin: 10px 20px;
     color: rgb(1, 252, 1);
     min-height: 820px;
 }
