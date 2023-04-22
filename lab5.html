@@ -68,6 +68,46 @@
             let cena = document.getElementById("cena");
             cena.innerHTML = "Сумма равна " + result + " рублей";
         }
+        function krugia(display) {
+            let a = document.getElementById("a");
+            a.style.display = display;
+        }
+        function krugib(display) {
+        let b = document.getElementById("b");
+            b.style.display = display;
+        }
+        function krugic(display) {
+        let c = document.getElementById("c");
+            c.style.display = display;
+        }
+        function krugid(display) {
+        let d = document.getElementById("d");
+            d.style.display = display;
+        }
+        function krugif(display) {
+        let f = document.getElementById("f");
+            f.style.display = display;
+        }
+        function krugig(display) {
+        let g = document.getElementById("g");
+            g.style.display = display;
+        }
+        function krugik(display) {
+        let k = document.getElementById("k");
+            k.style.display = display;
+        }
+        function krugil(display) {
+        let l = document.getElementById("l");
+            l.style.display = display;
+        }
+        function krugip(display) {
+        let p = document.getElementById("p");
+            p.style.display = display;
+        }
+        function krugio(display) {
+        let o = document.getElementById("o");
+            o.style.display = display;
+        }
     </script>
     <style>
 
@@ -103,6 +143,16 @@
         .karzina {
             border: 1px solid;
             width: 300px;
+        }
+        
+        .krug {
+            display: inline-block;
+            border: 1px solid;
+            margin: 30px;
+            padding: 15px;
+            border-radius: 100%;
+            width: 10px;
+            color: black;
         }
     </style>
 </head>
@@ -143,10 +193,19 @@
             <div class="podpis">Дыни (300р/шт):</div>
             <input type="number" value="1" id="numberG">
             <input type="button" value="Рассчитать" onclick="showSm()">
-
             <div id="cena"></div>
         </div>
 
+        <div class="krug"; style="background-color: aqua;" id="a" onclick="krugia('none')">1</div>
+        <div class="krug"; style="background-color: rgb(79, 233, 7);" id="b" onclick="krugib('none')">2</div>
+        <div class="krug"; style="background-color: rgb(233, 41, 7);" id="c" onclick="krugic('none')">3</div>
+        <div class="krug"; style="background-color: rgb(233, 218, 7);" id="d" onclick="krugid('none')">4</div>
+        <div class="krug"; style="background-color: rgb(8, 213, 240);" id="f" onclick="krugif('none')">5</div>
+        <div class="krug"; style="background-color: rgb(233, 7, 214);" id="g" onclick="krugig('none')">6</div>
+        <div class="krug"; style="background-color: rgb(7, 11, 233);" id="k" onclick="krugik('none')">7</div>
+        <div class="krug"; style="background-color: rgb(233, 7, 101);" id="l" onclick="krugil('none')">8</div>
+        <div class="krug"; style="background-color: rgb(7, 131, 233);" id="p" onclick="krugip('none')">9</div>
+        <div class="krug"; style="width: auto; background-color: blueviolet" id="o" onclick="krugio('none')">10</div>
     </main>
 
     <footer onclick="showAuthor()">
