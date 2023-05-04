@@ -29,6 +29,18 @@
             background-color: aliceblue;
             color: black;
         }
+
+        .color {
+            border: solid;
+            border-color: black;
+            margin-top: 30px;
+            padding: 10px;
+            width: 300px;
+            text-align: center;
+            background-color: yellow;
+            color: black;
+        }
+
     </style>
     <script>
         let number;
@@ -86,6 +98,38 @@
             screens[1].style.display = 'none';
         }
 
+            function changeColor (div) {
+                if(div.style.backgroundColor == 'yellow') {
+                    div.style.backgroundColor = 'red';
+                    div.style.color = 'yellow';
+                    div.style.borderColor = 'yellow';
+                    document.getElementById('color-name').innerHTML = 'красный';
+                }
+                else if(div.style.backgroundColor == 'red') {
+                    div.style.backgroundColor = 'black';
+                    div.style.color = 'white';
+                    div.style.borderColor = 'white';
+                    document.getElementById('color-name').innerHTML = 'черный';
+                }
+                else if(div.style.backgroundColor == 'black') {
+                    div.style.backgroundColor = 'purple';
+                    div.style.color = 'yellow';
+                    div.style.borderColor = 'yellow';
+                    document.getElementById('color-name').innerHTML = 'фиолетовый';
+                }
+                else if(div.style.backgroundColor == 'purple') {
+                    div.style.backgroundColor = 'green';
+                    div.style.color = 'orange';
+                    div.style.borderColor = 'orange';
+                    document.getElementById('color-name').innerHTML = 'зеленый';
+                }
+                else {
+                    div.style.backgroundColor = 'yellow';
+                    div.style.color = 'black';
+                    div.style.borderColor = 'black';
+                    document.getElementById('color-name').innerHTML = 'жёлтый';
+                }
+        }
     </script>
 </head>
 
@@ -141,6 +185,11 @@
                 <li><b>D</b>. В случае выигрыша вы можете переиграть нажав на кнопку "Сыграть ещё раз"</li>
                 <li><b>E</b>. В случае неудачи вы можете поменять число и продолжить</li>
             </ul>
+        </div>
+
+        <div class="color" ondblclick="changeColor(this)">
+            Цвет: <span id="color-name">жёлтый</span><br>
+            Сделайте двойной щелчок, чтобы сменить.
         </div>
     </main>
 
