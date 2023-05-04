@@ -17,6 +17,18 @@
             position: relative;
             text-align: center;
         }
+
+        .roles {
+            border-radius: 20px;
+            margin-top: 30px;
+            padding: 10px;
+            width: 300px;
+            left: 40%;
+            position: relative;
+            border-color: black;
+            background-color: aliceblue;
+            color: black;
+        }
     </style>
     <script>
         let number;
@@ -63,6 +75,16 @@
                 screens[1].style.display = 'none';
                 screens[2].style.display = 'none';
          }
+            function startRole () {
+            let screens = document.getElementsByClassName('roles');
+            screens[0].style.display = 'none';
+            screens[1].style.display = 'block';
+        }
+            function endRole () {
+            let screens = document.getElementsByClassName('roles');
+            screens[0].style.display = 'block';
+            screens[1].style.display = 'none';
+        }
 
     </script>
 </head>
@@ -100,6 +122,25 @@
             <div>
                 <button onclick="again()">Сыграть ещё раз</button>
             </div>
+        </div>
+
+        <div class="roles">
+            <button onclick="startRole()">
+                Показать правила игры
+            </button>
+        </div>
+
+        <div class="roles" style="display: none;">
+            <button onclick="endRole()">
+                Скрыть правила игры
+            </button>
+            <ul type="none">
+                <li><b>А</b>. Нажмите кнопку "Сыграть в игру"</li>
+                <li><b>B</b>. Введите предполагаемое число</li>
+                <li><b>С</b>. Нажмите кнопку "Угадать"</li>
+                <li><b>D</b>. В случае выигрыша вы можете переиграть нажав на кнопку "Сыграть ещё раз"</li>
+                <li><b>E</b>. В случае неудачи вы можете поменять число и продолжить</li>
+            </ul>
         </div>
     </main>
 
