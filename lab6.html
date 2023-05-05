@@ -35,10 +35,25 @@
             border-color: black;
             margin-top: 30px;
             padding: 10px;
-            width: 300px;
+            width: 150px;
             text-align: center;
             background-color: yellow;
             color: black;
+        }
+
+        .dvig {
+            border: solid;
+            border-color: yellow;
+            margin-top: 30px;
+            padding: 10px;
+            width: 300px;
+            text-align: center;
+            background-color: green;
+            color: yellow;
+            left: 0%;
+            position: relative;
+            display: block;
+            transform: rotate(0);
         }
 
     </style>
@@ -130,6 +145,19 @@
                     document.getElementById('color-name').innerHTML = 'жёлтый';
                 }
         }
+            function dvigen () {
+                let bum = document.getElementsByClassName('dvig');
+                if(bum[0].style.left == '80%') {
+                    bum[0].style.left = '0%'; 
+                    bum[0].style.transition = '3s';
+                    bum[0].style.transform = 'rotate(0turn)';
+                }
+                else {
+                    bum[0].style.left = '80%'; 
+                    bum[0].style.transition = '3s';
+                    bum[0].style.transform = 'rotate(4turn)';
+                }
+        }
     </script>
 </head>
 
@@ -191,6 +219,11 @@
             Цвет: <span id="color-name">жёлтый</span><br>
             Сделайте двойной щелчок, чтобы сменить.
         </div>
+
+        <div class="dvig" onclick="dvigen()">
+            Щелкни меня
+        </div>
+
     </main>
 
     <footer>
