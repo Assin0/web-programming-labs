@@ -233,6 +233,39 @@
                 }
 
         }
+            function filter() {
+                let color = document.getElementById('wear-color').value;
+                let type = document.getElementById('wear-type').value;
+                let wear = document.getElementById('wear');
+
+                if(color == 'Красный' && type == 'Футболка') {
+                    wear.src = 'redfut.jpg';
+                }
+                else if(color == 'Красный' && type == 'Майка') {
+                    wear.src = 'redmike.jpg';
+                }
+                else if(color == 'Красный' && type == 'Поло') {
+                    wear.src = 'redpolo.jpg';
+                }
+                else if(color == 'Черный' && type == 'Футболка') {
+                    wear.src = 'blackfut.jpg';
+                }
+                else if(color == 'Черный' && type == 'Майка') {
+                    wear.src = 'blackmike.jpg';
+                }
+                else if(color == 'Черный' && type == 'Поло') {
+                    wear.src = 'blackpolo.jpg';
+                }
+                else if(color == 'Белый' && type == 'Футболка') {
+                    wear.src = 'whitefut.jpg';
+                }
+                else if(color == 'Белый' && type == 'Майка') {
+                    wear.src = 'whitemike.jpg';
+                }
+                else {
+                    wear.src = 'whitepolo.jpeg';
+                }
+        }
     </script>
 </head>
 
@@ -303,6 +336,25 @@
             Я всё съем
         </div>
 
+        <div style="margin-top: 20px;">
+            Цвет одежды:
+            <select id="wear-color">
+                <option>Красный</option>
+                <option>Белый</option>
+                <option>Черный</option>
+            </select><br>
+
+            Тип одежды:
+            <select id="wear-type">
+                <option>Футболка</option>
+                <option>Поло</option>
+                <option>Майка</option>
+            </select><br>
+
+            <button onclick="filter()">OK</button>
+
+            <img id="wear">
+        </div>
     </main>
 
     <footer>
