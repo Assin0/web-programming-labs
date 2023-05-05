@@ -56,6 +56,22 @@
             transform: rotate(0);
         }
 
+        .shir {
+            border: solid;
+            border-color: white;
+            margin-top: 30px;
+            padding: 10px;
+            width: 100px;
+            text-align: center;
+            background-color: black;
+            color: white;
+            left: 0%;
+            position: relative;
+            display: block;
+            transform: rotate(0);
+            cursor: pointer;
+        }
+
     </style>
     <script>
         let number;
@@ -158,6 +174,65 @@
                     bum[0].style.transform = 'rotate(4turn)';
                 }
         }
+            function shiren () {
+                let bus = document.getElementsByClassName('shir');
+                bus[0].style.cursor = 'pointer';
+                if(bus[0].style.width == '100px') {
+                    bus[0].style.width = '150px';
+                }
+                else if (bus[0].style.width == '150px') {
+                    bus[0].style.width = '200px';
+                }
+                else if (bus[0].style.width == '200px') {
+                    bus[0].style.width = '250px';
+                }
+                else if (bus[0].style.width == '250px') {
+                    bus[0].style.width = '300px';
+                }
+                else if (bus[0].style.width == '300px') {
+                    bus[0].style.width = '350px';
+                }
+                else if (bus[0].style.width == '350px') {
+                    bus[0].style.width = '400px';
+                }
+                else if (bus[0].style.width == '400px') {
+                    bus[0].style.width = '450px';
+                }
+                else if (bus[0].style.width == '450px') {
+                    bus[0].style.width = '500px';
+                }
+                else if (bus[0].style.width == '500px') {
+                    bus[0].style.width = '550px';
+                }
+                else if (bus[0].style.width == '550px') {
+                    bus[0].style.width = '600px';
+                }
+                else if (bus[0].style.width == '600px') {
+                    bus[0].style.width = '650px';
+                }
+                else if (bus[0].style.width == '650px') {
+                    bus[0].style.width = '700px';
+                }
+                else if (bus[0].style.width == '700px') {
+                    bus[0].style.width = '750px';
+                }
+                else if (bus[0].style.width == '750px') {
+                    bus[0].style.width = '800px';
+                }
+                else if (bus[0].style.width == '800px') {
+                    bus[0].style.width = '850px';
+                }
+                else if (bus[0].style.width == '850px') {
+                    bus[0].style.width = '900px';
+                }
+                else if (bus[0].style.width == '900px') {
+                    bus[0].style.width = '950px';
+                }
+                else {
+                    bus[0].style.width = '100px';
+                }
+
+        }
     </script>
 </head>
 
@@ -222,6 +297,10 @@
 
         <div class="dvig" onclick="dvigen()">
             Щелкни меня
+        </div>
+
+        <div class="shir" onclick="shiren()">
+            Я всё съем
         </div>
 
     </main>
