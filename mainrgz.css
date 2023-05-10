@@ -1,6 +1,6 @@
 body {
     background-color: white;
-    font-family: Arial;
+    font-family: Arial, Helvetica, sans-serif;
     margin: 0px;
 }
 
@@ -26,7 +26,6 @@ menu:hover {
 
 main {
     margin: 10px 20px;
-    min-height: 2000px;
     position: relative;
 }
 
@@ -36,24 +35,9 @@ footer {
     font-size: 16pt;
     text-align: right;
     transition: 2s;
-    min-height: 50px;
-    width: 100%;
-}
-
-footer:hover {
-    background-color: black;
-    padding: 10px;
-    font-size: 18pt;
-    text-align: right;
-    transition: 600ms;
-}
-
-footer:active {
-    background-color: black;
-    padding: 10px;
-    font-size: 18pt;
-    text-align: right;
-    transition: 600ms;
+    width: 105%;
+    position: relative;
+    top: 300px;
 }
 
 .logo {
@@ -79,11 +63,13 @@ h2 {
     position: relative;
     margin-bottom: 10px;
     left: 40px;
+    transition: 300ms;
 }
 
 h2:hover {
     color: #008ce4;
     transition: 300ms;
+    font-size: 20pt;
 }
 
 .text {
@@ -96,6 +82,8 @@ h2:hover {
     border: solid;
     border-width: 1px;
     left: 20%;
+    width: 45%;
+    transition: 300ms;
 }
 
 .imgg:hover {
@@ -103,6 +91,7 @@ h2:hover {
     border-width: 1px;
     border-color: #008ce4;
     transition: 600ms;
+    width: 60%;
 }
 
 
