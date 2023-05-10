@@ -1,0 +1,108 @@
+body {
+    background-color: white;
+    font-family: Arial;
+    margin: 0px;
+}
+
+menu {
+    color:  black;
+    font-size: 15pt;
+    transition: 2s;
+    position: fixed;
+    padding: 0%;
+    margin: 0%;
+    width: 100%;
+    top: 0%;
+    z-index: 1;
+    background-image: url(can0.jpg); border-bottom: solid; border-width: 1px;
+}
+
+menu:hover {
+    font-size: 20pt;
+    color: #008ce4;
+    transition: 300ms;
+    border-color: black;
+}
+
+main {
+    margin: 10px 20px;
+    min-height: 2000px;
+    position: relative;
+}
+
+footer {
+    background: black;
+    color: black;
+    font-size: 16pt;
+    text-align: right;
+    transition: 2s;
+    min-height: 50px;
+    width: 100%;
+}
+
+footer:hover {
+    background-color: black;
+    padding: 10px;
+    font-size: 18pt;
+    text-align: right;
+    transition: 600ms;
+}
+
+footer:active {
+    background-color: black;
+    padding: 10px;
+    font-size: 18pt;
+    text-align: right;
+    transition: 600ms;
+}
+
+.logo {
+    width: 300px;
+    border: none;
+}
+
+a {
+    margin-right: 25px;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    position: relative;
+    top: -20px;
+}
+
+a:hover {
+    color: #008ce4;
+    transition: 300ms;
+}
+
+h2 {
+    position: relative;
+    margin-bottom: 10px;
+    left: 40px;
+}
+
+h2:hover {
+    color: #008ce4;
+    transition: 300ms;
+}
+
+.text {
+    position: relative;
+    left: 80px;
+}
+
+.imgg {
+    position: relative;
+    border: solid;
+    border-width: 1px;
+    left: 20%;
+}
+
+.imgg:hover {
+    border: solid;
+    border-width: 1px;
+    border-color: #008ce4;
+    transition: 600ms;
+}
+
+
