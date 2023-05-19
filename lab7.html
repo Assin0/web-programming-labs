@@ -48,6 +48,16 @@
                 transparentblocks.appendChild(blob);
             }
         }
+
+        function tableum () {
+            let tableumem = document.getElementById('tableumem');
+            for(let i = 0; i < 22; i++) {
+                let tab = document.createElement('div');
+                tab.innerHTML = (12+i) + '*' + '17' + '=' + ((12+i)*17);
+
+                tableumem.appendChild(tab);
+            }
+        }
     </script>
 </head>
 <body>
@@ -65,6 +75,9 @@
 
         <button onclick="addTransparentBlocks ()">Создать полупрозрачные блоки</button>
         <div id="transparentblocks" style="background-color: rgb(116, 113, 113);"></div>
+
+        <button onclick="tableum ()">Таблица умножения</button>
+        <div id="tableumem"></div>
     </main>
 
     <footer>
