@@ -6,6 +6,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>RGZ</title>
     <link rel="stylesheet" href="mainrgz.css">
+    <script>
+
+            function calc() {
+                let gsr = (156.8+152.85+152.83+150.71+155.99+162.78+166.24+173.60+176.93+176.01+181.75+196.19+198.26+194.38+196.94+200.51+195.92+193.82+194.49+191.49)/20;
+                let ksr = (173.5+169.5+169.35+169.65+172.3+174+179.35+184.75+192.35+192.6+209.1+219.95+214.45+207.65+212.4+216.75+213.6+209.3+209.05+208.75)/20;
+                let sredob = Math.sqrt(((156.8-gsr)**2+(152.85-gsr)**2+(152.83-gsr)**2+(150.71-gsr)**2+(155.99-gsr)**2+(162.78-gsr)**2+
+                (166.24-gsr)**2+(173.60-gsr)**2+(176.93-gsr)**2+(176.01-gsr)**2+(181.75-gsr)**2+(196.19-gsr)**2+(198.26-gsr)**2+
+                (194.38-gsr)**2+(196.94-gsr)**2+(200.51-gsr)**2+(195.92-gsr)**2+(193.82-gsr)**2+(194.49-gsr)**2+(191.49-gsr)**2)/20);
+                let sredpr = Math.sqrt(((173.5-ksr)**2+(169.5-ksr)**2+(169.35-ksr)**2+(169.65-ksr)**2+(172.3-ksr)**2+(174-ksr)**2+
+                (179.35-ksr)**2+(184.75-ksr)**2+(192.35-ksr)**2+(192.6-ksr)**2+(209.1-ksr)**2+(219.95-ksr)**2+(214.45-ksr)**2+
+                (207.65-ksr)**2+(212.4-ksr)**2+(216.75-ksr)**2+(213.6-ksr)**2+(209.3-ksr)**2+(209.05-ksr)**2+(208.75-ksr)**2)/20);
+                let a = Math.max (156.8, 152.85, 152.83, 150.71, 155.99, 162.78, 166.24, 173.60, 176.93, 176.01, 181.75, 196.19, 198.26, 194.38, 196.94, 200.51, 195.92, 193.82, 194.49, 191.49);
+                let b = Math.min (156.8, 152.85, 152.83, 150.71, 155.99, 162.78, 166.24, 173.60, 176.93, 176.01, 181.75, 196.19, 198.26, 194.38, 196.94, 200.51, 195.92, 193.82, 194.49, 191.49);
+                let c = Math.max (173.5, 169.5, 169.35, 169.65, 172.3, 174, 179.35, 184.75, 192.35, 192.6, 209.1, 219.95, 214.45, 207.65, 212.4, 216.75, 213.6, 209.3, 209.05, 208.75);
+                let e = Math.min (173.5, 169.5, 169.35, 169.65, 172.3, 174, 179.35, 184.75, 192.35, 192.6, 209.1, 219.95, 214.45, 207.65, 212.4, 216.75, 213.6, 209.3, 209.05, 208.75);
+                let messagemaxob = document.getElementById('resmaxob');
+                    messagemaxob.innerHTML = "Максимум обычных акций: " + a;
+                let messageminob = document.getElementById('resminob');
+                    messageminob.innerHTML = "Минимум обычных акций: " + b;
+                let messagesredob = document.getElementById('ressredob');
+                    messagesredob.innerHTML = "Среденквадратичное отклонение обычных акций: " + sredob;
+                let messagemaxpr = document.getElementById('resmaxpr');
+                    messagemaxpr.innerHTML = "Максимум привелигированных акций: " + c;
+                let messageminpr = document.getElementById('resminpr');
+                    messageminpr.innerHTML = "Минимум привелигированных акций: " + e;
+                let messagesredpr = document.getElementById('ressredpr');
+                    messagesredpr.innerHTML = "Среденквадратичное отклонение привелигированных акций: " + sredpr;
+            }
+
+    </script>
 </head>
 <body>
     <menu>
@@ -134,9 +164,20 @@
                 <td>208,75</td>
             </tr>
         </table>
+
+        <div class="text" style="top: 140px">
+        <input type="button" value="Рассчитать показатели" onclick="calc()">
+        <div id="resmaxob" style="margin-top: 10px; margin-bottom: 10px;"></div>
+        <div id="resminob" style="margin-top: 10px; margin-bottom: 10px;"></div>
+        <div id="ressredob" style="margin-top: 10px; margin-bottom: 10px;"></div>
+        <div id="resmaxpr" style="margin-top: 10px; margin-bottom: 10px;"></div>
+        <div id="resminpr" style="margin-top: 10px; margin-bottom: 10px;"></div>
+        <div id="ressredpr" style="margin-top: 10px; margin-bottom: 10px;"></div>
+        </div>
+
     </main>
 
-    <footer style="top: 1500px; position: relative;">
+    <footer style="top: 200px; position: relative;">
         <img src="logo1.png" style="width: 150px; position: relative; left: -90%;">
     </footer>
 </body>
