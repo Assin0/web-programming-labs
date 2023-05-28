@@ -64,6 +64,7 @@ h2 {
     margin-bottom: 10px;
     left: 40px;
     transition: 300ms;
+    width: 500px;
 }
 
 h2:hover {
