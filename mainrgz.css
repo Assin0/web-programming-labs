@@ -6,7 +6,7 @@ body {
 
 menu {
     color:  black;
-    font-size: 15pt;
+    font-size: 20pt;
     transition: 2s;
     position: fixed;
     padding: 0%;
@@ -33,7 +33,7 @@ footer {
     background: black;
     color: black;
     font-size: 16pt;
-    text-align: right;
+    text-align: left;
     transition: 2s;
     width: 105%;
     position: relative;
