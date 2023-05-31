@@ -23,3 +23,17 @@ function showDate() {
     let today5 = new Date();
     out5.innerHTML = "Дата и время для чешской локали " + today5.toLocaleString('cs-CZ');
 }
+
+function showDaysCount() {
+    let today = new Date();
+    let inputDate = document.querySelector('input[type=date]');
+    let birthday = new Date(inputDate.value);
+    let daysCount = (today - birthday)/1000/60/60/24;
+    daysCount = Math.floor(daysCount);
+    let out6 = document.getElementById('current-date6');
+    out6.innerHTML = "Дней со дня рождения:  " + daysCount;
+}
+
+function clearMes() {
+    location.reload();
+}
