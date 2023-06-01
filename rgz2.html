@@ -21,6 +21,8 @@
                 let b = Math.min (156.8, 152.85, 152.83, 150.71, 155.99, 162.78, 166.24, 173.60, 176.93, 176.01, 181.75, 196.19, 198.26, 194.38, 196.94, 200.51, 195.92, 193.82, 194.49, 191.49);
                 let c = Math.max (173.5, 169.5, 169.35, 169.65, 172.3, 174, 179.35, 184.75, 192.35, 192.6, 209.1, 219.95, 214.45, 207.65, 212.4, 216.75, 213.6, 209.3, 209.05, 208.75);
                 let e = Math.min (173.5, 169.5, 169.35, 169.65, 172.3, 174, 179.35, 184.75, 192.35, 192.6, 209.1, 219.95, 214.45, 207.65, 212.4, 216.75, 213.6, 209.3, 209.05, 208.75);
+                sredob = Number( sredob.toFixed(2));
+                sredpr = Number( sredpr.toFixed(2));
                 let messagemaxob = document.getElementById('resmaxob');
                     messagemaxob.innerHTML = "Максимум обычных акций: " + a;
                 let messageminob = document.getElementById('resminob');
@@ -37,7 +39,7 @@
 
     </script>
 </head>
-<body>
+<body onload="calc()">
     <menu>
         <img src="logo.png" class="logo"><a href="rgz1.html">О компании</a><a href="rgz2.html" style="color: #008ce4;">Основные финансовые показатели</a>
         <a href="rgz3.html">Контактные данные</a><a href="rgz4.html">Видео</a>
@@ -54,7 +56,7 @@
             <b>138 756 915</b> - привилегированных именных акций номинальной стоимостью 10 рублей.
         </div>
 
-        <table style="position: relative; top: 120px; left: 100px;" border="1">
+        <table style="position: relative; top: 120px; left: 100px; border: groove;" border="2">
             <tr>
                 <td rowspan="2" style="text-align: center"><b>Дата</b></td>
                 <td colspan="2" style="text-align: center"><b>Цена</b></td>
@@ -166,7 +168,6 @@
         </table>
 
         <div class="text" style="top: 140px">
-        <input type="button" value="Рассчитать показатели" onclick="calc()">
         <div id="resmaxob" style="margin-top: 10px; margin-bottom: 10px;"></div>
         <div id="resminob" style="margin-top: 10px; margin-bottom: 10px;"></div>
         <div id="ressredob" style="margin-top: 10px; margin-bottom: 10px;"></div>
@@ -177,7 +178,7 @@
 
     </main>
 
-    <footer>
+    <footer style="top: 170px;">
         <img src="logo1.png" style="width: 150px; position: relative;">
         <a href="https://www.youtube.com/user/MechelOAO/featured"><img style="width: 30px; position: relative; bottom: 10px;" src="youtubelogo1.png"></a>
         <a href="https://t.me/paomechel"><img style="width: 30px; position: relative; bottom: 8px;" src="telegramlogo.png"></a>

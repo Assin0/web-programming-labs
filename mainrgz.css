@@ -17,13 +17,6 @@ menu {
     background-image: url(can0.jpg); border-bottom: solid; border-width: 1px;
 }
 
-menu:hover {
-    font-size: 20pt;
-    color: #008ce4;
-    transition: 300ms;
-    border-color: black;
-}
-
 main {
     margin: 10px 20px;
     position: relative;
