@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Комаров Юрий ФБИ-11</title>
+    <style>
+        .block {
+            background-color: black;
+            color: white;
+            text-align: center;
+        }
+
+        .block:hover {
+            color: green;
+            font-size: 15pt;
+            transition: 300ms;
+            text-shadow: 3px 3px 3px rgb(237, 237, 243);
+        }
+    </style>
+    <script>
+        function rez() {
+            let d = document.getElementById('rob')
+            let t = document.getElementById('rob1')
+            let tt = parseInt(t.value)
+            if (tt<50) {
+                d.innerHTML = "Неудовлетворительно"
+            }
+            else if (tt<75) {
+                d.innerHTML = "Удовлетворительно"
+            }
+            else  if (75<tt<100) {
+                d.innerHTML = "Хорошо"
+            }
+            else {
+                d.innerHTML = "Некоректные данные"
+            }
+        }
+
+        function reb() {
+            location.reload();
+        }
+    </script>
+</head>
+<body>
+    <div style="padding: 20px; height: 20px;" class="block" id="rob">Результат</div>
+    <button style="padding: 20px; margin-top: 10px;" class="block" onclick="rez()">Расчитать</button><br>
+    <input placeholder="поле с текущими баллами [от 1 до 100]" style="padding: 20px; width: 250px; margin-top: 10px;" class="block" id="rob1"></input><br>
+    <button style="padding: 20px; margin: 50px; position: relative; top: 600px; left: 800px;" class="block" onclick="reb()">Сбросить</button>
+</body>
+</html>
